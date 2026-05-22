@@ -1,8 +1,9 @@
 ---
 name: code-decoded
-description: Turns any codebase into a self-contained interactive HTML course. Use when asked to explain a codebase, generate onboarding material, create an interactive tour of a repo, teach how code works, or produce a visual walkthrough for developers or non-technical users. Output is a single HTML file with no dependencies that can be hosted as a landing page or shared directly. Works for any language, any audience level.
+description: "Turn a codebase into a self-contained interactive HTML course for onboarding, walkthroughs, or stakeholder explanation."
+metadata:
+  version: "0.2.0"
 ---
-
 # Code Decoded
 
 Turn a codebase into a self-contained interactive HTML course. One file. No setup. Host it, share it, or open it locally.
