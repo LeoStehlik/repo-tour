@@ -2,7 +2,7 @@
 name: code-decoded
 description: "Turn a codebase into a self-contained interactive HTML course for onboarding, walkthroughs, or stakeholder explanation."
 metadata:
-  version: "0.2.0"
+  version: "0.2.1"
 ---
 # Code Decoded
 
@@ -10,6 +10,13 @@ Turn a codebase into a self-contained interactive HTML course. One file. No setu
 
 Read `references/html-structure.md` for the HTML output spec.
 Read `references/design-principles.md` for visual and content rules.
+
+
+## Activation and Data Boundary
+
+Use this skill only when the user explicitly asks for Code Decoded, a repo tour, onboarding course, codebase walkthrough, or stakeholder explanation. Do not activate it for routine code review, refactoring, or debugging.
+
+The skill reads repository files and writes one HTML output file. Confirm or choose an output path before writing, and do not overwrite an existing file without user approval. Generated HTML can contain real source snippets, internal file paths, and architecture details; review it before sharing outside the project.
 
 ## What to Build
 

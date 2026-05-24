@@ -6,6 +6,13 @@ Point it at a repo, get back a single HTML file that teaches how the code works 
 
 ---
 
+
+## Activation and Data Boundary
+
+Use this skill for explicit requests to create a Code Decoded course, repo tour, onboarding walkthrough, or stakeholder explanation. It should not trigger for ordinary code review, refactoring, or debugging.
+
+The agent reads repository files and writes one self-contained HTML file. Confirm the output path before generation, avoid overwriting existing files without approval, and review the HTML before sharing because it may include real code snippets, private paths, and architecture details.
+
 ## What it generates
 
 - **Architecture overview** - visual diagram of how the main components connect
@@ -49,7 +56,7 @@ Copy the `repo-tour` folder into your project's skills directory, then invoke wi
 
 ## Usage
 
-Just say what you want:
+Invoke it explicitly with a repo-tour request:
 
 ```
 Turn this codebase into an interactive course
